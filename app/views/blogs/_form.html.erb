@@ -11,27 +11,31 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
+  <div class="field form-group">
+    <%= form.text_field :title,
+    class:"form-control",
+    placeholder:"title" %>
   </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
+  <div class="field form-group">
+    <%= form.text_field :content,
+    class:"form-control",
+    placeholder:"content" %>
   </div>
 
-  <div class="field">
-    <%= form.label :author %>
-    <%= form.text_field :author %>
+  <div class="field form-group">
+    <%= form.text_field :author,
+    class:"form-control",
+    placeholder:"author" %>
   </div>
 
-  <div class="field">
-    <%= form.label :social %>
-    <%= form.text_field :social %>
+  <div class="field form-group">
+    <%= form.text_field :social,
+    class:"form-control",
+    placeholder:"social" %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:"btn btn-outline-success" %>
   </div>
 <% end %>
